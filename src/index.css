@@ -18,7 +18,6 @@
 @layer itsmz {
 
   :root {
-    @apply pl-4;
     @apply text-gray-900 bg-white;
     @apply font-normal leading-6 antialiased;
   }
