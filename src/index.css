@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-primary: #F8DFFC;
+  --color-secondary: #DF9BF2;
+  --color-tertiary: #BF4980;
+  --color-primary-2: #A7F2F2;
+  --color-secondary-2: #8BCED4;
+  --text-h1: 4rem;
+  --text-h2: 2.4rem;
+  --text-h3: 1.9rem;
+  --text-h4: 1.1rem;
+}
+
+@layer itsmz {
+
+  :root {
+    @apply pl-4;
+    @apply text-gray-900 bg-white;
+    @apply font-normal leading-6 antialiased;
+  }
+
+  h1 {
+    @apply text-h1 text-tertiary leading-24;
+  }
+
+  h2 {
+    @apply text-h2 leading-14;
+  }
+
+  h3 {
+    @apply text-h3 leading-12;
+  }
+
+  h4 {
+    @apply text-h4 leading-9 font-bold;
+  }
+
+  a {
+    @apply flex flex-row
+  }
+
+}
